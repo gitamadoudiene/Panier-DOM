@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magasin en Ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar avec l'icône de panier -->
+    <nav>
+        <h1>Magasin</h1>
+        <div class="cart">
+            <span id="cartCount">0</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Panier" width="24" height="24">
+        </div>
+    </nav>
+
+    <!-- Section des produits -->
+    <div class="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Produit 1" class="product-image">
+            <h3>Produit 1</h3>
+            <p>Prix: 1000 FCFA</p>
+            <button onclick="addToCart('Produit 1', 1000)">Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Produit 2" class="product-image">
+            <h3>Produit 2</h3>
+            <p>Prix: 2000 FCFA</p>
+            <button onclick="addToCart('Produit 2', 2000)">Ajouter au panier</button>
+        </div>
+    </div>
+
+    <!-- Section du panier -->
+    <div class="cart-details" id="cartDetails">
+        <h2>Panier</h2>
+        <ul id="cartItems"></ul>
+        <p id="totalPrice">Total : 0 FCFA</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
